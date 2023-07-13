@@ -12,6 +12,8 @@ html{
 :root{
   --body-color:#f0f2f5;
   --text-color: #5f5f5f;
+  --text-color-secondary: #777;
+  --color-blue: #405be6;
   --background-color: #fff;
 }
 
@@ -72,7 +74,7 @@ img{
   content: '';
   width: 0;
   height: 2px;
-  background: #045be6;
+  background: var(--color-blue);
   position: absolute;
   bottom: -13px;
   transition: width 0.3s;
@@ -173,7 +175,7 @@ img{
 .sidebar-profile-info h2{
   font-size: 1.4rem;
   font-weight: 500;
-  color: #777;
+  color: var(--text-color-secondary);
 }
 
 .sidebar-profile-info ul{
@@ -188,7 +190,7 @@ img{
 }
 .sidebar-profile-info ul li span{
   float: right;
-  color: #405be6;
+  color: var(--color-blue);
 }
 
 .sidebar-profile-links{
@@ -213,3 +215,41 @@ img{
   width: 2rem;
   margin-right: 1rem;
 }
+
+.sidebar-activity{
+  background: var(--background-color);
+  padding: 0.5rem 2.5rem;
+  margin: 1rem 0;
+}
+.sidebar-activity h3{
+  color: var(--text-color-secondary);
+  font-weight: 1.4rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+
+}
+.sidebar-activity a{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.3rem 0;
+}
+
+.sidebar-activity a img{
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.discover-more-link{
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin: 2rem -2.5rem 0 -2.5rem;
+  
+}
+.discover-more-link a{
+  color: var(--color-blue);
+  display: inline-block;
+  margin: 1rem 0;
+}
+

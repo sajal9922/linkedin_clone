@@ -29,6 +29,10 @@ a{
   
 }
 
+img{
+  width: 100%;
+}
+
 /* Navigation Bar */
 
 .nav-bar{
@@ -58,9 +62,25 @@ a{
   align-items: center;
   margin: 0.5rem 0.8rem;
   padding-right: 0.5rem;
+  position: relative;
 }
-.nav-bar a img{
+.nav-links img{
   width: 3rem;
+}
+
+.nav-links a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #045be6;
+  position: absolute;
+  bottom: -13px;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active-link::after{
+  width: 100%;
 }
 
 .profile-image{
@@ -86,3 +106,110 @@ a{
   width: 0.7rem;
 }
 
+.search-box{
+  background: var(--body-color);
+  width: 25rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.nav-bar-left{
+  display: flex;
+  align-items: center;
+}
+
+.search-box img{
+  width: 1.4rem;
+}
+.search-box input{
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+}
+/* Body content */
+
+.container{
+  padding: 2rem 6%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-sidebar,
+.right-sidebar{
+  flex-basis: 25%;
+  align-self: flex-start;
+
+}
+
+.main-content{
+  flex-basis: 47%;
+}
+
+/* Left sidebar */
+.sidebar-profile-container{
+  background: var(--background-color);
+}
+.sidebar-profile-info{
+  padding: 0 2.5rem;
+}
+.sidebar-profile-info img{
+  width: 9rem;
+  border-radius: 100%;
+  background: var(--background-color);
+  padding: 0.4rem;
+  margin-top: -4.5rem;
+}
+.sidebar-profile-info h1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.sidebar-profile-info h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.sidebar-profile-info ul{
+  list-style: none;
+  margin: 2rem 0;
+
+}
+.sidebar-profile-info ul li{
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+.sidebar-profile-info ul li span{
+  float: right;
+  color: #405be6;
+}
+
+.sidebar-profile-links{
+  display: flex;
+  align-items: center;
+
+  border-top: 1px solid #ccc;
+}
+.sidebar-profile-links a{
+  flex-basis: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+  border-left: 1px solid #ccc ;
+}
+.sidebar-profile-links a:first-child{
+  border-left: none;
+}
+.sidebar-profile-links a img{
+  width: 2rem;
+  margin-right: 1rem;
+}

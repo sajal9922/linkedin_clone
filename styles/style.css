@@ -143,6 +143,8 @@ a{
 .right-sidebar{
   flex-basis: 25%;
   align-self: flex-start;
+  position: sticky;
+  top: 7.3rem;
 
 }
 

@@ -441,3 +441,90 @@ a{
 .sort-by span img{
   width: 1.2rem;
 }
+
+/* post */
+
+.post{
+  background: var(--background-color);
+  padding: 2rem 2.5rem 1rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.post-author{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.post-author img{
+  width: 3.5rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+.post-author h1{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+  margin: 1rem 0 1rem;
+}
+
+.post-author small{
+  display:block;
+  margin-bottom: -1px;
+  font-size: 1.2rem;
+}
+.post p{
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.post-stats{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+font-size: 1.2rem;
+border-bottom: 1px solid #ccc;
+padding-bottom: 0.5rem;
+}
+
+.post-stats div{
+  display: flex;
+  align-items: center;
+
+}
+.post-stats img{
+  width: 1.5rem;
+  margin-right: -0.5rem;
+}
+.liked-user{
+  margin-left: 1rem;
+}
+
+/* Post activity */
+
+.post-activity{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+.post-activity div{
+  display: flex;
+  align-items: center;
+}
+.post-activity-user-icon{
+  width: 2.2rem;
+  border-radius: 100%;
+  margin-right: 0.3rem;
+}
+.post-activity-arrow-icon{
+  width: 1.2rem;
+}
+.post-activity-link img{
+  width: 1.8rem;
+  margin-right: 1rem;
+}
+

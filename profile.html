@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="nav-bar">
+      <!-- Left section -->
+      <div class="nav-bar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <!-- Middle section -->
+      <div class="nav-bar-center">
+        <ul>
+          <li class="nav-links">
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li class="nav-links">
+            <a href="#"
+              ><img src="images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li class="nav-links">
+            <a href="#"><img src="images/jobs.png" /><span>Jobs</span></a>
+          </li>
+          <li class="nav-links">
+            <a href="#"
+              ><img src="images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li class="nav-links">
+            <a href="#"
+              ><img src="images/notification.png" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Right section -->
+      <div class="nav-bar-right">
+        <div class="online">
+          <img
+            src="images/user-1.png"
+            class="profile-image"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+
+      <!-- -------- Profile drop down menu-------- -->
+
+      <div class="porfile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png" />
+            <div>
+              <h3>Sajal</h3>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" />
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" />
+            <p>Settings & Privecy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.png" />
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- ---------- body content------------- -->
+
+    <div class="container">
+      <!-- -------------- Profile Main------------- -->
+
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/cover-pic.png" class="profile-cover-image" />
+          <div class="profile-container-inner">
+            <img src="images/user-1.png" class="profile-picture" />
+            <h1>Brayan Scott</h1>
+            <b>
+              Web Developer in Microsoft | Former Developer at Data Tech and
+              intern at Sisco
+            </b>
+            <p>Kokkola, Finland &middot; <a href="#"></a>Contact user-info</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------Profile Sidebar--------------- -->
+
+      <div class="profile-sidebar"></div>
+    </div>
+
+    <!-- --------- JavaScript for profile menu-------- -->
+    <script>
+      const profileMenuElement = document.getElementById('profileMenu');
+      function toggleMenu() {
+        profileMenuElement.classList.toggle('open-menu');
+      }
+    </script>
+  </body>
+</html>

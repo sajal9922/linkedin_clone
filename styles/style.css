@@ -679,4 +679,76 @@ padding-bottom: 0.5rem;
   color: #fff;
 }
 
+.profile-description{
+  background: var(--background-color);
+  margin: 1.5rem 0;
+  padding: 3rem 4% ;
+}
+.profile-description h2{
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.profile-description p{
+  line-height: 1.5;
+}
+.see-more-link{
+  display: block;
+  text-align: right;
+  color: var(--color-blue);
+}
+.profile-description-row{
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+.profile-description-row img{
+  width: 5rem;
+  margin-right: 2rem;
+
+}
+.profile-description-row div{
+  width: 100%;
+}
+.profile-description-row div h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.profile-description-row div b{
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.profile-description-row div p{
+  margin-top: 1rem;
+}
+.profile-description-row div hr{
+  border: none;
+  height: 1px;
+  background:var(--text-color-secondary);
+  margin-top: 1rem;
+}
+.show-more-experience{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.show-more-experience img{
+  width: 1.8rem;
+  margin-left: 1rem ;
+}
+.skills-button{
+  display: inline-block ;
+  border: 1px solid #777;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+
 

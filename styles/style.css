@@ -795,5 +795,65 @@ padding-bottom: 0.5rem;
 }
 
 
+/* ---------Media Query for slaller screen----------------- */
+
+@media screen and (max-width: 600px) {
+  .search-box{
+    background: transparent;
+    width: auto;
+    padding: 0;
+  }
+  
+  .search-box input{
+    width: 0;
+    padding: 0;
+  }
+  .nav-bar-center ul li a span{
+    display: none;
+    padding: 0;
+   
+  }
+  .nav-bar-center ul li a{
+    padding: 0;
+    margin-right: 0.5rem;
+  }
+  .profile-image{
+    width: 3.5rem;
+  }
+  .container{
+    padding: 1.5rem 3%;
+  }
+  .left-sidebar, .right-sidebar{
+    flex-basis: 100%;
+    position: relative;
+    top: unset;
+  }
+  .main-content{
+    flex-basis: 100%;
+  }
+  .profile-main{
+    flex-basis: 100%;
+  }
+  .profile-sidebar{
+    flex-basis: 100%;
+  }
+  .profile-picture{
+    width: 10rem;
+    margin-top: -5rem;
+  }
+  .profile-footer{
+    padding: 0 1rem;
+  }
+  .profile-footer .right-sidebar-links{
+  text-align: center;
+    
+  }
+  .profile-footer .copyright{
+    justify-content: center;
+  }
+
+}
+
+
 
 

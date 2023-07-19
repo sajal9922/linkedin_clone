@@ -751,4 +751,37 @@ padding-bottom: 0.5rem;
 }
 
 
+/* ---------Profile Sidebar----------- */
+.profile-sidebar .right-sidebar-ad{
+  margin-top: 0;
+}
+
+.sidebar-people{
+  background: var(--background-color);
+  padding: 2rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.sidebar-people-row{
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+.sidebar-people-row img{
+  width: 3.4rem;
+  border-radius: 100%;
+  margin-right: 1.5rem;
+}
+.sidebar-people-row .skills-button{
+  margin-left: 0;
+ 
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+
+
+
+
+
 

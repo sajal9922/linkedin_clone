@@ -634,7 +634,49 @@ padding-bottom: 0.5rem;
 }
 .profile-container p{
   font-size: 1.3rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
+}
+
+.profile-container p a{
+  color: var(--color-blue);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.mutual-connection{
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  
+}
+.mutual-connection img{
+  width: 2.5rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+.mutual-connection span{
+  font-size: 1.4rem;
+}
+
+.profile-button{
+  margin: 2rem 0;
+}
+.profile-button a{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #d4d4d4;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+
+}
+.profile-button img{
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+.profile-button .primary-button{
+  background: var(--color-blue);
+  color: #fff;
 }
 
 

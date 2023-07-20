@@ -67,7 +67,7 @@
 
       <!-- -------- Profile drop down menu-------- -->
 
-      <div class="porfile-menu-wrap" id="profileMenu">
+      <div class="porfile-menu-wrap js-profile-menu">
         <div class="profile-menu">
           <div class="user-info">
             <img src="images/user-1.png" />
@@ -126,7 +126,7 @@
             <a href="#"><img src="images/premium.png" />Try Premium</a>
           </div>
         </div>
-        <div class="sidebar-activity">
+        <div class="sidebar-activity js-sidebar-activity">
           <h3>RECENT</h3>
           <a href="#"><img src="images/recent.png" />Web Development</a>
           <a href="#"><img src="images/recent.png" />User Interface</a>
@@ -149,6 +149,9 @@
             <a href="#">Discover More</a>
           </div>
         </div>
+        <p class="show-more js-show-more" onclick="toggleActivity()">
+          Show More +
+        </p>
       </div>
       <!-- main content -->
       <div class="main-content">
@@ -457,12 +460,6 @@
       </div>
     </div>
 
-    <!-- --------- JavaScript for profile menu-------- -->
-    <script>
-      const profileMenuElement = document.getElementById('profileMenu');
-      function toggleMenu() {
-        profileMenuElement.classList.toggle('open-menu');
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

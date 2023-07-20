@@ -793,6 +793,9 @@ padding-bottom: 0.5rem;
 .profile-footer .copyright{
   justify-content: flex-start;
 }
+.show-more{
+  display: none;
+}
 
 
 /* ---------Media Query for slaller screen----------------- */
@@ -850,6 +853,30 @@ padding-bottom: 0.5rem;
   }
   .profile-footer .copyright{
     justify-content: center;
+  }
+  .post-stats div{
+    margin: 0.2rem 0;
+  }
+
+  .post-activity-link  span{
+    display: none;
+  }
+  .post-activity-link img{
+    margin-right: 0;
+  }
+
+  .show-more{
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  .sidebar-activity{
+    display: none;
+  }
+  .sidebar-activity.open-activity{
+    display: block;
   }
 
 }
